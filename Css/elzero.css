@@ -1274,6 +1274,21 @@ header .container > ul > .tiny-list > ul li a {
         right 0 top 30%,
         left 0 bottom 28%;
     background-repeat: no-repeat;
+    position: relative;
+}
+.latest-events::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+.latest-events .special-heading {
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container {}
 .latest-events .container .holder {
@@ -1282,6 +1297,7 @@ header .container > ul > .tiny-list > ul li a {
 }
 .latest-events .container .holder .image {
     flex-basis: 40%;
+    z-index: 2;
 }
 .latest-events .container .holder .image img {
     width: 100%;
@@ -1307,6 +1323,8 @@ header .container > ul > .tiny-list > ul li a {
     border: 1px solid var(--light-gray);
     border-radius: 5px;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container .holder .content .stats .stat p:nth-child(1) {
     font-size: 35px;
@@ -1315,6 +1333,8 @@ header .container > ul > .tiny-list > ul li a {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container .holder .content .stats .stat p:nth-child(2) {
     font-size: 12px;
@@ -1323,6 +1343,8 @@ header .container > ul > .tiny-list > ul li a {
     border-top: 1px solid var(--light-gray);
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container .holder .content .text {
     text-align: center;
@@ -1330,10 +1352,14 @@ header .container > ul > .tiny-list > ul li a {
 .latest-events .container .holder .content .text h3 {
     font-size: 25px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container .holder .content .text p {
     line-height: 1.8;
     color: var(--p-color);
+    z-index: 2;
+    position: relative;
 }
 .latest-events .container form {
     width: fit-content;
@@ -1341,6 +1367,8 @@ header .container > ul > .tiny-list > ul li a {
     padding: 40px;
     border-radius: 70px;
     background-color: var(--light-gray);
+    position: relative;
+    z-index: 2;
 }
 .latest-events .container form input[type=email] {
     margin-right: 20px;
