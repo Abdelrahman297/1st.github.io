@@ -884,18 +884,18 @@ header .container > ul > .tiny-list > ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #F3F3F3;
     border-radius: 15px;
     z-index: -2;
+    background-color: var(--light-gray);
 }
 .team-members .container .box-holder .box::after {
+    background-color: #F3F3F3;
     content: "";
     height: 100%;
     width: 0;
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: var(--light-gray);
     border-radius: 15px;
     z-index: -1;
     transition-duration: var(--main-duration);
@@ -915,9 +915,10 @@ header .container > ul > .tiny-list > ul li a {
     overflow: hidden;
     flex-basis: 100%;
     transition-duration: var(--main-duration);
+    filter: grayscale(100%);
 }
 .team-members .container .box-holder .box:hover .head .image {
-    filter: grayscale(100%);
+    filter: none;
 }
 .team-members .container .box-holder .box .head .image img {
     width: 100%;
