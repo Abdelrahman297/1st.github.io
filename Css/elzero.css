@@ -956,11 +956,11 @@ header .container > ul > .tiny-list > ul li a {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 21px;
-    color: var(--main-color);
     transition-duration: var(--main-duration);
+    color: var(--p-color);
 }
 .team-members .container .box-holder .box:hover .text h3 {
-    color: var(--p-color);
+    color: var(--main-color);
 }
 /* End Team Members */
 /* Start Services */
