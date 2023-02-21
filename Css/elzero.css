@@ -234,6 +234,18 @@ header .container > ul > li:hover:last-of-type + .tiny-list {
         transform: translateY(1px);
     }
 }
+header .container > ul > li:last-of-type + .tiny-list:hover {
+    display: flex;
+    justify-content: space-between;
+    right: -20px;
+    top: 100%;
+    width: calc(100% + 40px);
+    transform: translateY(30px);
+    animation-name: up;
+    animation-duration: .1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
 header .container > ul > .tiny-list > img {
     width: 40%;
 }
